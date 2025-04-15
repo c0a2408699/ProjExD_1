@@ -33,15 +33,15 @@ def main():
         screen.blit(bg_img3, [-tmr+3200, 0])  
         screen.blit(kk,kk_rct)
         pg.display.update()
-        x-=1
+        x=-1
         if key_lst[pg.K_UP]: 
-            y-=1
+            y=-1
         if key_lst[pg.K_DOWN]: 
-            y+=1
+            y=1
         if key_lst[pg.K_LEFT]: 
-            x-=1
+            x=-1
         if key_lst[pg.K_RIGHT]: 
-            x+=2
+            x=2
         kk_rct.move_ip((+x, +y))
         tmr += 1
         clock.tick(200)
